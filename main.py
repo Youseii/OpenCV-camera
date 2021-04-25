@@ -3,8 +3,6 @@ import cv2
 
 video = cv2.VideoCapture(0, cv2.CAP_DSHOW)  # 0 = the numbers of your camera, i got one camera so he's name would be 0
 
-# https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html For more details about Haar cascade
-# https://github.com/opencv/opencv/tree/master/data/haarcascades The github for all the specifically about detection
 face = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
 eye = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_eye.xml")
 Glasses = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_eye_tree_eyeglasses.xml")
