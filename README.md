@@ -16,6 +16,6 @@ For now the function glasses doesnt work, because the .xml glasses from opencv i
 
 Now the programm detect your face and eyes
 
-UPDATE:
+UPDATE 25/04/2021:
 
 The function glasses works now with the new .xml present on the with the code.
