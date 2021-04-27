@@ -14,6 +14,8 @@ For more details about Haarcascade :
 
 For now the function glasses doesnt work, because the .xml glasses from opencv is a little bad and useless, so i will find to make my own set.
 
+To exit the page, we need to press the key "q".
+
 Now the programm detect your face and eyes
 
 UPDATE 25/04/2021:
