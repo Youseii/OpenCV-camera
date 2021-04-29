@@ -12,8 +12,10 @@ while True:
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = face.detectMultiScale(gray, 1.3, 5)
+    # (x,y) is the left corner of the camera; w is the width; h is the height
     for(x, y, w, h) in faces:
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 4)
+        cv2.putText(frame, "you hehe", (x + w, y - 2), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 3)
         roi_gray = gray[y:y+h, x:x+w]
         roi_color = frame[y:y+h, x:x+w]
 
